@@ -1,1 +1,1 @@
-# JARViE_Extender
+# JARViE I2C/SPI/GPIO Extender 
