@@ -7,7 +7,7 @@ I2C and SPI were designed to be used in-PCB, so the total bus length shouldn't e
 keep bus lengths at 1-2m maximum for I2C and SPI. 
  
 
-![Board Pin 1](https://raw.githubusercontent.com/DudeYarvie/JARViE_I2C_Bus_Extender/main/Reference%20Docs/Pics/Board_Annotated.jpg "Board Pin 1")
+![Board](https://raw.githubusercontent.com/DudeYarvie/JARViE_Bus_Extender/main/Reference%20Docs/Pics/DIO_Redriver_Resized_GitHub.jpg "Board")
 
 ## Product Features
 - Can transmit I2C/SPI/GPIO signals over 150 ft of twisted pair cable
