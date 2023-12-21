@@ -42,7 +42,7 @@ keep bus lengths at 1-2m maximum for I2C and SPI.
 | 4 |CABLE SDA| I/O | Buffered data bus. Route this pin to long cable. Signal has a 300 Ohm pull-up to drive signal down long wires. CABLE CLK and SDA circuitry are the same so pins are interchangeable. |
 | 6 | CABLE SCL | I/0 | Buffered data bus. Route this pin to long cable. Signal has a 300 Ohm pull-up to drive signal down long wires. CABLE CLK and SDA circuitry are the same so pins are interchangeable. |
 | A2 | YELLOW LED | I | Yellow LED on RJ45 connector for indication. **Only drive LED from DEVICE HDR pins.** |
-| A4 | GREEN LED | I | Yellow LED on RJ45 connector for indication. **Only drive LED from DEVICE HDR pins.** |
+| A4 | GREEN LED | I | Green LED on RJ45 connector for indication. **Only drive LED from DEVICE HDR pins.** |
 
 # **How It Works**
 Place the JARVIE Extender on each side of a cable terminated with an RJ45 connector plug.  Connect the I2C/SPI/DIO signals of each device directly to the HOST pins of the extender(s).  The circuitry on the extender automatically detects the hardware flow (e.g. device A is sending data to device B or vice-versa).  To overcome the large capacitance of the long cable, the extender draws 10x more current on the long cable side when a logic LOW or 0 bit is transmitted between devices A and B.  Drawing 10x more current on the cable side quickly discharges the cable capacitance allowing for fast and clean high-to-low signal transitions.  The pull-ups on the cable-side of the buffer will quickly source current/charge to the cable capacitance.  This allows for fast and clean low-to-high signal transitions.  Clean signal transitions are required for successful bus communications, especially over long cables. 
